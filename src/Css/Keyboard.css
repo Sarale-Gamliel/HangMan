@@ -1,0 +1,39 @@
+.btn {
+    border: 3px solid black;
+    border-radius: 10px;
+    background: transparent;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.btn.active {
+    background-color: #6366F1;
+    color: white;
+}
+
+.btn.inactive {
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: #818CF8;
+}
+
+@media only screen and (max-width: 40px) {
+    .btn {
+        width: 3px;
+        height: 3px;
+        font-size: 1px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+}
